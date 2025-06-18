@@ -1,0 +1,23 @@
+# Do not touch this setting, it may delete all your current settings.
+config-version: 1
+
+# Available languages: en-US, es-ES, fr-FR, pr-BR, ru-RU, de-DE
+language: en-US
+
+# This is the minimum that the user must bet to announce it to all users on the server.
+min-amount-broadcast: 100
+
+# for 64 bits SERVER = 9223372036854775807
+# for 32 bits SERVER = 2147483647
+min-amount: 1
+max-amount: 10000000000
+
+# CoinFlip Autosave Time
+# Use the same format as above
+# I recommend a minimum of 3 minutes (3m) and a maximum of 10 minutes (10m)
+auto-save: 5m
+
+# This is the tax that will be taken from the money earned
+# This is the percentage, but do not use the %
+cf-tax: 15
+

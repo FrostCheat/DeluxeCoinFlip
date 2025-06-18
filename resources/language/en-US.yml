@@ -1,0 +1,5 @@
+prefix: ""
+
+npc.name: "&l&aNEW!\n&r&l&4Coin Flip\n&7/cf"
+npc.scoreTag: "&8Click to open"
+npc.spawn: "&aYou have successfully spawned the NPC, to remove it hit it with a bedrock block"

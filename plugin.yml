@@ -1,0 +1,22 @@
+name: DeluxeCoinFlip
+api: 5.3.0
+version: 1.0.0
+main: frostcheat\deluxecoinflip\Loader
+author: FrostCheat
+
+depend:
+  - BedrockEconomy
+
+permissions:
+  deluxecoinflip.command:
+    default: true
+  deluxecoinflip.command.create:
+    default: true
+  deluxecoinflip.command.delete:
+    default: true
+  deluxecoinflip.command.npc:
+    default: op
+  deluxecoinflip.command.reload:
+    default: op
+  deluxecoinflip.command.setlanguage:
+    default: op

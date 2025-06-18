@@ -1,0 +1,44 @@
+prefix: "&bCoinFlip &7- &r"
+
+item.lore:
+  - "&f "
+  - "&b&lApuesta"
+  - "  &7{amount}"
+  - "&r "
+  - "&7Click aqui para apostar"
+
+coinflip.winner: "&eEl jugador &b{winner} &eha ganado su apuesta contra &b{player} &ey ha ganado &b{amount} ({tax})"
+
+npc.name: "&l&a¡NUEVO!\n&r&l&4Coin Flips\n&7/cf"
+npc.scoreTag: "&8Haz clic para abrir"
+npc.spawn: "&aHas generado exitosamente el NPC, para eliminarlo pégale con un bloque de bedrock"
+
+menu.item.previousPage: "&cPágina Anterior"
+menu.item.nextPage: "&aPágina Siguiente"
+menu.item.confirmBuy: "&aConfirmar Apuesta"
+menu.item.cancelBuy: "&cCancelar Apuesta"
+menu.item.balance: "&fSaldo: &e{balance}"
+
+menu.title: "&eC&fF &7- &fPágina: &e{current_page}"
+menu.confirmTitle: "&aMenú de Confirmación"
+menu.cf: "&fEn: &e{time}"
+
+player.insufficientFunds: "&cNo tienes fondos suficientes para realizar esta accion"
+player.hasCoinflip: "&cNo puedes crear un coinflip ya tienes uno activo"
+player.notificationCoinflip: "&fEl jugador &e{player} &facaba de crear un coinflip de &e{amount} &fusa &e/cf"
+
+command.help: "&b/ah help"
+command.noPlayer: "&cDebes ser un jugador para usar este comando"
+command.noPermission: "&cNo tienes permiso para usar este comando"
+
+command.create.success: "&aAcabas de crear un coinflip de &e{amount}"
+command.create.minAmountError: "&cEl precio debe ser mayor o igual a {price}"
+command.create.maxAmountError: "&cEl precio debe ser menor o igual a {price}"
+
+command.setlanguage.error: "&cEse lenguaje no esta permitido usa: en-US, es-ES, fr-FR, pr-BR, ru-RU, de-DE"
+command.setlanguage.success: "&aEl lenguaje se ha cambiado perfectamente"
+
+command.delete.success: "&aTu coinflip se ha eliminado correctamente y se han devuelto &e{amount} &aa tu cuenta"
+command.delete.error: "&cNo tienes un coinflip activo para eliminar"
+
+commnad.reload.success: "&aLa configuracion del plugin se ha recargado perfectamente"
