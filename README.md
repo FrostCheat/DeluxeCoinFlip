@@ -7,8 +7,8 @@
   <a href="https://discord.gg/k8X7CG2kFv">
     <img src="https://img.shields.io/discord/1384337463971020911?style=for-the-badge&logo=discord&color=5865F2">
   </a>
-  <a href="https://poggit.pmmp.io/ci/FrostCheatMC/DeluxeCoinFlip/DeluxeCoinFlip">
-    <img src="https://poggit.pmmp.io/ci.shield/FrostCheatMC/DeluxeCoinFlip/DeluxeCoinFlip?style=for-the-badge">
+  <a href="https://poggit.pmmp.io/ci/FrostCheat/DeluxeCoinFlip/DeluxeCoinFlip">
+    <img src="https://poggit.pmmp.io/ci.shield/FrostCheat/DeluxeCoinFlip/DeluxeCoinFlip?style=for-the-badge">
   </a>
   <a href="https://poggit.pmmp.io/p/DeluxeCoinFlip">
     <img src="https://poggit.pmmp.io/shield.downloads/DeluxeCoinFlip?style=for-the-badge">
