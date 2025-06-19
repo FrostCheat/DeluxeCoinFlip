@@ -4,6 +4,7 @@ namespace frostcheat\deluxecoinflip\commands;
 
 use CortexPE\Commando\BaseCommand;
 
+use frostcheat\deluxecoinflip\commands\subcommands\DeleteSubCommand;
 use frostcheat\deluxecoinflip\commands\subcommands\NPCSubCommand;
 use frostcheat\deluxecoinflip\cf\CoinFlipManager;
 use frostcheat\deluxecoinflip\commands\subcommands\CreateSubCommand;
@@ -20,7 +21,7 @@ class CoinFlipCommand extends BaseCommand {
 
     public function __construct(Plugin $plugin) {
         parent::__construct($plugin, "coinflip", "Open CoinFlip Menu", ["cf"]);
-        $this->setPermission("coinflip.command");
+        $this->setPermission("deluxecoinflip.command");
     }
 
     public function prepare(): void {
@@ -28,6 +29,7 @@ class CoinFlipCommand extends BaseCommand {
         $this->registerSubCommand(new NPCSubCommand());
         $this->registerSubCommand(new ReloadSubCommand());
         $this->registerSubCommand(new SetLanguageSubCommand());
+        $this->registerSubCommand(new DeleteSubCommand());
     }
 
     public function onRun(CommandSender $sender, string $aliasUsed, array $args): void {

@@ -104,32 +104,21 @@ class Utils {
         return 0;
     }
 
-    /**
-     * Returns a head item
-     * @param CompoundTag|Skin $skin
-     * @param string $name
-     * @return Item
-     */
-    public function getHeadItem(CompoundTag|Skin $skin, string $name): Item
-    {
-        $skin = $skin instanceof Skin ? $this->skinToTag($skin) : $skin;
+    public function getHeadItem(string $playerUUID, string $playerName, string $skinData) : Item {
+        // We get the skull item from the Itemfactory because @link VanillaItems::PLAYER_HEAD() would just return an
+        // instance of PocketMine-MP's and not our skull item.
+        /** @var Item $item */
         $item = VanillaBlocks::MOB_HEAD()->setMobHeadType(MobHeadType::PLAYER())->asItem();
-        $tag = $item->getCustomBlockData() ?? new CompoundTag();
-        $tag->setTag('Skin', $skin);
-        $tag->setString('Player', $name);
-        $item->setCustomBlockData($tag);
-        $item->setCustomName($name);
+        // We get the item's nbt data to store the player's UUID, name and skin data in it.
+        // The nbt data should be empty anyway, but just to be sure, we fetch it from the item instead of
+        // creating a new one.
+        $nbt = $item->getNamedTag();
+        $nbt->setString("PlayerUUID", $playerUUID);
+        $nbt->setString("PlayerName", $playerName);
+        $nbt->setByteArray("SkinData", $skinData);
+        $item->setNamedTag($nbt);
+        $item->setCustomName($playerName);
         return $item;
-    }
-
-     /**
-     * Converts a skin to nbt
-     * @param Skin $skin
-     * @return CompoundTag
-     */
-    public function skinToTag(Skin $skin): CompoundTag
-    {
-        return (new CompoundTag())->setString('Name', $skin->getSkinId())->setByteArray('Data', $skin->getSkinData());
     }
 
     public function play(Player $p, string $soundName, float $volume = 1, float $pitch = 1):void {
@@ -170,7 +159,7 @@ class Utils {
         ];
     
         $itemA = $cf->getItem();
-        $itemB = $this->getHeadItem($opponent->getSkin(), $opponent->getName());
+        $itemB = $this->getHeadItem($opponent->getXuid(), $opponent->getName(), $opponent->getSkin()->getSkinData());
     
         $centerItems = [$itemA, $itemB];
     

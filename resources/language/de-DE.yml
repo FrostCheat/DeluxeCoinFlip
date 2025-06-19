@@ -1,0 +1,44 @@
+prefix: "&bCoinFlip &7- &r"
+
+item.lore:
+  - "&f "
+  - "&b&lWette"
+  - "  &7{amount}"
+  - "&r "
+  - "&7Klicke hier, um zu wetten"
+
+coinflip.winner: "&eSpieler &b{winner} &ehat die Wette gegen &b{player} &egewonnen und &b{amount} ({tax}) erhalten"
+
+npc.name: "&l&aNEU!\n&r&l&4Coin Flips\n&7/cf"
+npc.scoreTag: "&8Klicken zum Öffnen"
+npc.spawn: "&aNPC erfolgreich gespawnt, mit Bedrock schlagen, um ihn zu entfernen"
+
+menu.item.previousPage: "&cVorherige Seite"
+menu.item.nextPage: "&aNächste Seite"
+menu.item.confirmBuy: "&aWette bestätigen"
+menu.item.cancelBuy: "&cWette abbrechen"
+menu.item.balance: "&fKontostand: &e{balance}"
+
+menu.title: "&eC&fF &7- &fSeite: &e{current_page}"
+menu.confirmTitle: "&aBestätigungsmenü"
+menu.cf: "&fIn: &e{time}"
+
+player.insufficientFunds: "&cDu hast nicht genug Geld für diese Aktion"
+player.hasCoinflip: "&cDu hast bereits ein aktives Coinflip"
+player.notificationCoinflip: "&fSpieler &e{player} &fhat gerade ein Coinflip über &e{amount} &ferstellt, nutze &e/cf"
+
+command.help: "&b/ah hilfe"
+command.noPlayer: "&cDu musst ein Spieler sein, um diesen Befehl zu verwenden"
+command.noPermission: "&cDu hast keine Berechtigung, diesen Befehl zu verwenden"
+
+command.create.success: "&aDu hast gerade ein Coinflip über &e{amount} &aerstellt"
+command.create.minAmountError: "&cDer Preis muss größer oder gleich {price} sein"
+command.create.maxAmountError: "&cDer Preis muss kleiner oder gleich {price} sein"
+
+command.setlanguage.error: "&cDiese Sprache ist nicht erlaubt, benutze: en-US, es-ES, fr-FR, pr-BR, ru-RU, de-DE"
+command.setlanguage.success: "&aSprache erfolgreich geändert"
+
+command.delete.success: "&aDein Coinflip wurde gelöscht und &e{amount} &awurde deinem Konto gutgeschrieben"
+command.delete.error: "&cDu hast kein aktives Coinflip zum Löschen"
+
+commnad.reload.success: "&aPlugin-Konfiguration erfolgreich neu geladen"

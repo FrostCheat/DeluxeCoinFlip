@@ -63,7 +63,7 @@ class CreateSubCommand extends BaseSubCommand {
 
         Utils::getInstance()->removeBalance($sender->getName(), $amount, function (bool $success) use ($amount, $sender): void {
             if ($success) {
-                $item = Utils::getInstance()->getHeadItem($sender->getSkin(), $sender->getName());
+                $item = Utils::getInstance()->getHeadItem($sender->getXuid(), $sender->getName(), $sender->getSkin()->getSkinData());
                 CoinFlipManager::getInstance()->addCoinflip(new CoinFlip(
                     $sender->getName(),
                     $amount,

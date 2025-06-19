@@ -1,5 +1,44 @@
-prefix: ""
+prefix: "&bCoinFlip &7- &r"
 
-npc.name: "&l&aNEW!\n&r&l&4Coin Flip\n&7/cf"
+item.lore:
+  - "&f "
+  - "&b&lBet"
+  - "  &7{amount}"
+  - "&r "
+  - "&7Click here to bet"
+
+coinflip.winner: "&ePlayer &b{winner} &ewon the bet against &b{player} &eand received &b{amount} ({tax})"
+
+npc.name: "&l&aNEW!\n&r&l&4Coin Flips\n&7/cf"
 npc.scoreTag: "&8Click to open"
-npc.spawn: "&aYou have successfully spawned the NPC, to remove it hit it with a bedrock block"
+npc.spawn: "&aYou have successfully spawned the NPC, hit it with bedrock to remove it"
+
+menu.item.previousPage: "&cPrevious Page"
+menu.item.nextPage: "&aNext Page"
+menu.item.confirmBuy: "&aConfirm Bet"
+menu.item.cancelBuy: "&cCancel Bet"
+menu.item.balance: "&fBalance: &e{balance}"
+
+menu.title: "&eC&fF &7- &fPage: &e{current_page}"
+menu.confirmTitle: "&aConfirmation Menu"
+menu.cf: "&fIn: &e{time}"
+
+player.insufficientFunds: "&cYou don't have enough funds to perform this action"
+player.hasCoinflip: "&cYou already have an active coinflip"
+player.notificationCoinflip: "&fPlayer &e{player} &fjust created a coinflip of &e{amount} &fuse &e/cf"
+
+command.help: "&b/ah help"
+command.noPlayer: "&cYou must be a player to use this command"
+command.noPermission: "&cYou don't have permission to use this command"
+
+command.create.success: "&aYou just created a coinflip of &e{amount}"
+command.create.minAmountError: "&cThe price must be greater than or equal to {price}"
+command.create.maxAmountError: "&cThe price must be less than or equal to {price}"
+
+command.setlanguage.error: "&cThat language is not allowed, use: en-US, es-ES, fr-FR, pr-BR, ru-RU, de-DE"
+command.setlanguage.success: "&aLanguage changed successfully"
+
+command.delete.success: "&aYour coinflip was successfully deleted and &e{amount} &awas returned to your account"
+command.delete.error: "&cYou don't have an active coinflip to delete"
+
+commnad.reload.success: "&aPlugin configuration successfully reloaded"

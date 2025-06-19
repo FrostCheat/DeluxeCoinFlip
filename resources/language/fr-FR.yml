@@ -1,0 +1,44 @@
+prefix: "&bCoinFlip &7- &r"
+
+item.lore:
+  - "&f "
+  - "&b&lPari"
+  - "  &7{amount}"
+  - "&r "
+  - "&7Clique ici pour parier"
+
+coinflip.winner: "&eLe joueur &b{winner} &ea gagné son pari contre &b{player} &eet a reçu &b{amount} ({tax})"
+
+npc.name: "&l&aNOUVEAU !\n&r&l&4Coin Flips\n&7/cf"
+npc.scoreTag: "&8Cliquez pour ouvrir"
+npc.spawn: "&aNPC généré avec succès, frappez-le avec de la bedrock pour le supprimer"
+
+menu.item.previousPage: "&cPage précédente"
+menu.item.nextPage: "&aPage suivante"
+menu.item.confirmBuy: "&aConfirmer le pari"
+menu.item.cancelBuy: "&cAnnuler le pari"
+menu.item.balance: "&fSolde : &e{balance}"
+
+menu.title: "&eC&fF &7- &fPage : &e{current_page}"
+menu.confirmTitle: "&aMenu de Confirmation"
+menu.cf: "&fDans : &e{time}"
+
+player.insufficientFunds: "&cVous n'avez pas assez de fonds pour effectuer cette action"
+player.hasCoinflip: "&cVous avez déjà un coinflip actif"
+player.notificationCoinflip: "&fLe joueur &e{player} &fvient de créer un coinflip de &e{amount} &futilisez &e/cf"
+
+command.help: "&b/ah aide"
+command.noPlayer: "&cVous devez être un joueur pour utiliser cette commande"
+command.noPermission: "&cVous n'avez pas la permission d'utiliser cette commande"
+
+command.create.success: "&aVous venez de créer un coinflip de &e{amount}"
+command.create.minAmountError: "&cLe prix doit être supérieur ou égal à {price}"
+command.create.maxAmountError: "&cLe prix doit être inférieur ou égal à {price}"
+
+command.setlanguage.error: "&cCette langue n'est pas autorisée, utilisez : en-US, es-ES, fr-FR, pr-BR, ru-RU, de-DE"
+command.setlanguage.success: "&aLangue changée avec succès"
+
+command.delete.success: "&aVotre coinflip a été supprimé avec succès et &e{amount} &aa été retourné sur votre compte"
+command.delete.error: "&cVous n'avez aucun coinflip actif à supprimer"
+
+commnad.reload.success: "&aLa configuration du plugin a été rechargée avec succès"

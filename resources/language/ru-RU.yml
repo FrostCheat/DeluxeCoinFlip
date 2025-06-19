@@ -1,0 +1,44 @@
+prefix: "&bCoinFlip &7- &r"
+
+item.lore:
+  - "&f "
+  - "&b&lСтавка"
+  - "  &7{amount}"
+  - "&r "
+  - "&7Нажмите сюда, чтобы сделать ставку"
+
+coinflip.winner: "&eИгрок &b{winner} &eвыиграл ставку против &b{player} &eи получил &b{amount} ({tax})"
+
+npc.name: "&l&aНОВОЕ!\n&r&l&4Coin Flips\n&7/cf"
+npc.scoreTag: "&8Нажмите, чтобы открыть"
+npc.spawn: "&aNPC успешно создан, ударьте его бедроком, чтобы удалить"
+
+menu.item.previousPage: "&cПредыдущая страница"
+menu.item.nextPage: "&aСледующая страница"
+menu.item.confirmBuy: "&aПодтвердить ставку"
+menu.item.cancelBuy: "&cОтменить ставку"
+menu.item.balance: "&fБаланс: &e{balance}"
+
+menu.title: "&eC&fF &7- &fСтраница: &e{current_page}"
+menu.confirmTitle: "&aМеню Подтверждения"
+menu.cf: "&fЧерез: &e{time}"
+
+player.insufficientFunds: "&cУ вас недостаточно средств для выполнения действия"
+player.hasCoinflip: "&cУ вас уже есть активный coinflip"
+player.notificationCoinflip: "&fИгрок &e{player} &fтолько что создал coinflip на &e{amount} &fиспользуйте &e/cf"
+
+command.help: "&b/ah помощь"
+command.noPlayer: "&cВы должны быть игроком, чтобы использовать эту команду"
+command.noPermission: "&cУ вас нет прав для использования этой команды"
+
+command.create.success: "&aВы только что создали coinflip на &e{amount}"
+command.create.minAmountError: "&cЦена должна быть больше или равна {price}"
+command.create.maxAmountError: "&cЦена должна быть меньше или равна {price}"
+
+command.setlanguage.error: "&cЭтот язык недопустим, используйте: en-US, es-ES, fr-FR, pr-BR, ru-RU, de-DE"
+command.setlanguage.success: "&aЯзык успешно изменен"
+
+command.delete.success: "&aВаш coinflip был успешно удален, и &e{amount} &aвозвращено на ваш счет"
+command.delete.error: "&cУ вас нет активного coinflip для удаления"
+
+commnad.reload.success: "&aКонфигурация плагина успешно перезагружена"

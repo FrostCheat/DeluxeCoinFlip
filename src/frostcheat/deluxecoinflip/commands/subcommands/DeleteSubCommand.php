@@ -11,6 +11,7 @@ use frostcheat\deluxecoinflip\language\TranslationMessages;
 use frostcheat\deluxecoinflip\utils\Utils;
 
 use pocketmine\command\CommandSender;
+use pocketmine\player\Player;
 
 class DeleteSubCommand extends BaseSubCommand {
     public function __construct() {
