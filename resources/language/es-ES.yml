@@ -41,4 +41,4 @@ command.setlanguage.success: "&aEl lenguaje se ha cambiado perfectamente"
 command.delete.success: "&aTu coinflip se ha eliminado correctamente y se han devuelto &e{amount} &aa tu cuenta"
 command.delete.error: "&cNo tienes un coinflip activo para eliminar"
 
-commnad.reload.success: "&aLa configuracion del plugin se ha recargado perfectamente"
+command.reload.success: "&aLa configuracion del plugin se ha recargado perfectamente"

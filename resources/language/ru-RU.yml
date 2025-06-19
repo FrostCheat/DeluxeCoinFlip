@@ -41,4 +41,4 @@ command.setlanguage.success: "&aЯзык успешно изменен"
 command.delete.success: "&aВаш coinflip был успешно удален, и &e{amount} &aвозвращено на ваш счет"
 command.delete.error: "&cУ вас нет активного coinflip для удаления"
 
-commnad.reload.success: "&aКонфигурация плагина успешно перезагружена"
+command.reload.success: "&aКонфигурация плагина успешно перезагружена"

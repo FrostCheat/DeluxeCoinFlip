@@ -41,4 +41,4 @@ command.setlanguage.success: "&aSprache erfolgreich geändert"
 command.delete.success: "&aDein Coinflip wurde gelöscht und &e{amount} &awurde deinem Konto gutgeschrieben"
 command.delete.error: "&cDu hast kein aktives Coinflip zum Löschen"
 
-commnad.reload.success: "&aPlugin-Konfiguration erfolgreich neu geladen"
+command.reload.success: "&aPlugin-Konfiguration erfolgreich neu geladen"
