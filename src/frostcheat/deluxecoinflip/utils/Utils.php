@@ -105,13 +105,8 @@ class Utils {
     }
 
     public function getHeadItem(string $playerUUID, string $playerName, string $skinData) : Item {
-        // We get the skull item from the Itemfactory because @link VanillaItems::PLAYER_HEAD() would just return an
-        // instance of PocketMine-MP's and not our skull item.
-        /** @var Item $item */
         $item = VanillaBlocks::MOB_HEAD()->setMobHeadType(MobHeadType::PLAYER())->asItem();
-        // We get the item's nbt data to store the player's UUID, name and skin data in it.
-        // The nbt data should be empty anyway, but just to be sure, we fetch it from the item instead of
-        // creating a new one.
+    
         $nbt = $item->getNamedTag();
         $nbt->setString("PlayerUUID", $playerUUID);
         $nbt->setString("PlayerName", $playerName);
