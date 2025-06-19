@@ -149,8 +149,8 @@ class Utils {
         $state = 0;
     
         $glassColors = [
-            VanillaBlocks::STAINED_GLASS()->setColor(DyeColor::BLACK())->asItem(),
-            VanillaBlocks::STAINED_GLASS()->setColor(DyeColor::YELLOW())->asItem(),
+            VanillaBlocks::STAINED_GLASS()->setColor(DyeColor::BLACK())->asItem()->setCustomName(""),
+            VanillaBlocks::STAINED_GLASS()->setColor(DyeColor::YELLOW())->asItem()->setCustomName(""),
         ];
     
         $itemA = $cf->getItem();
